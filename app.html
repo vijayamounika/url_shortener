@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!--
+<script type="text/javascript">
+        function validate() {
+            var url = document.getElementById("url").value;
+            var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+            if (pattern.test(url)) {
+                alert("Url is valid, you can submit now");
+                return true;
+            }
+            alert("Url is not valid!");
+            return false;
+        }
+    </script>
+    -->
+
+    <title>URL Minimiser</title>
+</head>
+
+<body>
+    <h1 align="middle">UrlMinimiser</h1>
+    <form action="" id="urlForm" align="middle" name="urlForm">
+        <div>
+            <label for="Url">Please enter URL here:</label>
+            <input type="text" id="url" name="url">
+        </div>
+        <br>
+
+        <div class="button">
+            <input type="button" id="submit" value="Send your Url" onclick="ajaxjquery()">
+
+        </div><br>
+        <div id="result"></div>
+
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+</html>
